@@ -94,7 +94,7 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 ![image](https://github.com/user-attachments/assets/bad2ce77-c045-40db-9196-d561a803f4a0)
 
 ## Modeling
-Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+Dalam proyek ini saya menggunakan dua mosel baseline yaitu Random Forest dan Support Vector Machine (SVM). Random forest menghasilkan akurasi 99.53% dan F1-score 99.53%, sedangkan SVM 
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
 - Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
