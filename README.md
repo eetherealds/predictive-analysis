@@ -171,7 +171,7 @@ Pipeline untuk model RF menggunakan  `RandomForestClassifier` dari library `skle
 
 ![image](https://github.com/user-attachments/assets/1fd673ec-4b15-482a-bddc-c62299548743)
 
-Sedangkan, pipeline SVM menggunakan `SVC` dari sklearn.svm. Pipeline ini juga terdiri dari preprocessing data dan pelatihan model. Disini menggunakan parameter seed juga yaitu `random_state=42`. Parameter `probability=True` digunakan untuk memungkinkan keluaran probabilitas prediksi. SVM bekerja dengan mencari hyperplane optimal untuk memisahkan kelas dalam data dan sangat efektif untuk data berdimensi tinggi. Namun, SVM sensitif terhadap noise dan membutuhkan tuning parameter seperti `C` dan `gamma`.
+Sedangkan, pipeline SVM menggunakan `SVC` dari `sklearn.svm`. Pipeline ini juga terdiri dari preprocessing data dan pelatihan model. Disini menggunakan parameter seed juga yaitu `random_state=42`. Parameter `probability=True` digunakan untuk memungkinkan keluaran probabilitas prediksi. SVM bekerja dengan mencari hyperplane optimal untuk memisahkan kelas dalam data dan sangat efektif untuk data berdimensi tinggi. Namun, SVM sensitif terhadap noise dan membutuhkan tuning parameter seperti `C` dan `gamma`.
 
 ![image](https://github.com/user-attachments/assets/4a3102b4-34a2-4a2e-aecc-4c2af6fbb4a9)
 
@@ -189,11 +189,11 @@ Pada tahap evaluasi ini saya menggunakan beberapa metrik untuk mengukur performa
 
 2. **Precission:** Mengindikasikan seberapa banyak prediksi positif yang benar dibandingkan dengan total prediksi positif. Precision penting jika kesalahan positif palsu (false positive) perlu diminimalkan.
    
-![image](https://github.com/user-attachments/assets/374d79d4-c5e2-4e69-9496-e72c076cc675)
+![image](https://github.com/user-attachments/assets/f971383d-6f41-4eed-a920-3999abc4c8e7)
 
 3. **Recall:** Mengukur kemampuan model dalam mendeteksi seluruh sampel positif yang sebenarnya. Recall penting jika kesalahan negatif palsu (false negative) harus diminimalkan.
-   
-![image](https://github.com/user-attachments/assets/d95290f4-5c29-4224-b1e3-e540b8e47989)
+
+![image](https://github.com/user-attachments/assets/6b1cbdba-68fc-40d5-8e84-1448f4df8ab4)
 
 4. **F1-score:** Mengombinasikan precision dan recall menjadi satu nilai rata-rata tertimbang, sehingga memberikan gambaran tentang keseimbangan performa model di semua kelas.
 
@@ -216,3 +216,19 @@ Pada tahap evaluasi ini saya menggunakan beberapa metrik untuk mengukur performa
   - **Low (0)**: 85 sampel diklasifikasikan dengan benar, 1 salah ke "High (2)".
   - **Medium (1)**: Semua 75 sampel diklasifikasikan dengan benar tanpa kesalahan.
   - **High (2)**: Semua 51 sampel diklasifikasikan dengan benar tanpa kesalahan.
+
+![image](https://github.com/user-attachments/assets/53132c5b-e0d6-45eb-b737-8fe94e855166)
+
+#### **Support Vector Machine (SVM)**
+- **Accuracy**: 92.92% — Performa cukup baik, namun lebih rendah dibandingkan dengan Random Forest.
+- **F1-score (weighted)**: 92.92% — Menunjukkan keseimbangan yang baik, namun terdapat kekurangan pada beberapa kelas.
+- **Precision** untuk kelas "Low (0)" adalah 98%, sedangkan untuk "Medium (1)" dan "High (2)" masing-masing adalah 91% dan 88%.
+- **Recall** menunjukkan hasil yang serupa, dengan kelas "High (2)" memiliki recall terendah sebesar 88%.
+- **F1-score** juga lebih rendah pada kelas "Medium (1)" dan "High (2)".
+
+![image](https://github.com/user-attachments/assets/cd0044fc-f5f4-49b1-a310-0c63ab42c68b)
+
+**Confusion Matrix (lihat Gambar 1)**:
+- **Low (0)**: 84 sampel benar, 1 salah ke "Medium (1)", dan 1 salah ke "High (2)".
+- **Medium (1)**: 68 sampel benar, 2 salah ke "Low (0)", dan 5 salah ke "High (2)".
+- **High (2)**: 45 sampel benar, 6 salah ke "Medium (1)".
