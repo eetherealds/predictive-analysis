@@ -99,7 +99,7 @@ Gambar Kanan (Distribusi Temperature)
 - Sebagian besar sampel berada pada suhu 35-45°C, mencerminkan suhu standar penyimpanan atau pengolahan susu.
 - Nilai di atas 50°C menunjukkan kemungkinan pasteurisasi atau pemanasan.
   
-2. Membuat grafik distribusi pH dan Temperature terhadap kategori Grade.
+2. **Membuat grafik distribusi pH dan Temperature terhadap kategori Grade.**
 
 ![image](https://github.com/user-attachments/assets/92472f18-3ba5-4b64-b2dc-7ced2d30a25d)
 
@@ -113,7 +113,7 @@ Gambar Kanan (Temperature by Grade):
 - Grade Low (0) menunjukkan variasi temperatur yang besar (35-70°C) dengan outlier di 90°C.
 - Grade Medium (1) dan High (2) memiliki rentang temperatur lebih konsisten (35-45°C).
 
-3. Menampilkan grafik semua parameter terhadap grade.
+3. **Menampilkan grafik semua parameter terhadap grade.**
 
 ![image](https://github.com/user-attachments/assets/ee40fcc0-7b74-445b-b3c2-bc08ab1df2bb)
 
@@ -139,7 +139,7 @@ Colour by Grade
 - Colour 255 mendominasi semua grade, tapi Grade 0 (Low) paling banyak.
 - Nilai warna di bawah 255 cenderung meningkat untuk Grade 2 (High).
 
-4. Korelasi numerik menggunakan heatmap.
+4. **Korelasi numerik menggunakan heatmap.**
 
 ![image](https://github.com/user-attachments/assets/b8f62c3b-7ab3-412c-9f72-62166ffbb0a1)
 
