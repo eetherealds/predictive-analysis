@@ -81,7 +81,7 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 
 ## Data Preparation
 1. Memisahkan fitur (x) dan label (y)
-   - fitur (x) mencakup semua kolom kecuali 'Grade', sedangkan label (y) adalah kolom Grade.
+   - fitur (x) mencakup semua kolom kecuali `Grade`, sedangkan label (y) adalah kolom `Grade`.
    - Tujuan: Memisahkan variabel independen dan dependen untuk pemodelan
 2. Menentukan kolom kategorikal dan numerik dari data fitur (x), lalu menampilkan hasil identifikasi kolom.
 3. Membuat pipeline untuk transformasi data numerik dan kategorikal.
@@ -92,12 +92,14 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 ![image](https://github.com/user-attachments/assets/bad2ce77-c045-40db-9196-d561a803f4a0)
 
 ## Modeling
-Dalam proyek ini saya menggunakan dua mosel baseline yaitu Random Forest dan Support Vector Machine (SVM). Random forest menghasilkan akurasi 99.53% dan F1-score 99.53%, sedangkan SVM 
+Dalam proyek ini saya menggunakan dua mosel baseline yaitu Random Forest dan Support Vector Machine (SVM). Random forest menghasilkan akurasi 99.53% dan F1-score 99.53%, sedangkan SVM menghasilkan akurasi 92.92% dengan F1-score 92.92%.
+![image](https://github.com/user-attachments/assets/4d93d683-814a-4b12-8a18-67619ba5a5dd)
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-- Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. **Jelaskan proses improvement yang dilakukan**.
-- Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
+**Kelebihan dan Kekurangan:**
+1. Random Forest: sangat akurat, tahan terhadap overfitting, mampu menangani data dengan missing value.
+2. SVM          : efektif pada data yang tinggi, tapi lebih sensitif terhadap parameter dan skala fitur.
+
+Karena Random Forest memiliki performa yang lebih baik dibanding SVM dlam semua metrik evaluasi, maka dipilih sebagai model terbaik dlam proyek ini.
 
 ## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
