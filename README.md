@@ -49,11 +49,11 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
    
 ![image](https://github.com/user-attachments/assets/136dd4ec-8f9c-4ae3-9324-d1c3005d73a7)
 
-4. Menampilkan informasi ringkas tentang DataFrame. Disini semua kolom memiliki data yang lengkap (tidak terdapat missing values).
+3. Menampilkan informasi ringkas tentang DataFrame. Disini semua kolom memiliki data yang lengkap (tidak terdapat missing values).
    
 ![image](https://github.com/user-attachments/assets/28668d0e-0572-4b8c-a9fc-ea8524452679)
 
-6. Menampilkan statistik deskriptif untuk kolom numerik.
+4. Menampilkan statistik deskriptif untuk kolom numerik.
    
 ![image](https://github.com/user-attachments/assets/0d478c4f-9400-42cd-8120-b27ef7144bce)
 
@@ -67,15 +67,15 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 - 75% : Kuartil ketiga (batas 25% data teratas)
 - max : Nilai maksimum
   
-7. Mengecek apakah terdapat nilai kosong pada setiap kolom. Disini tidak terdapat nilai kosong di seluruh kolom dataset.
+5. Mengecek apakah terdapat nilai kosong pada setiap kolom. Disini tidak terdapat nilai kosong di seluruh kolom dataset.
    
 ![image](https://github.com/user-attachments/assets/80843e48-0219-4fcb-a26f-850c759871a7)
 
-8. Lalu kita mengubah kolom `Grade` menjadi nilai numerik menggunakan mapping. Sekarang diasumsikan Low (0), Meidum (1), dan High (2).
+6. Lalu kita mengubah kolom `Grade` menjadi nilai numerik menggunakan mapping. Sekarang diasumsikan Low (0), Meidum (1), dan High (2).
     
 ![image](https://github.com/user-attachments/assets/c45aa0f7-d802-482b-9625-1380663ce55a)
 
-9. Membuat plot distribusi kelas susu.
+7. Membuat plot distribusi kelas susu.
     
 ![image](https://github.com/user-attachments/assets/06eff0d0-d525-43ca-aaf1-2668131f271b)
 
@@ -85,11 +85,12 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 - High (2) berjumlah 256 sampel, menjadi kelas dengan jumlah data paling sedikit.
 
 **Exploratory Data Analysis (EDA)**
-1. Membuat grafik distribusi pH dan Temperature.
+1. **Membuat grafik distribusi pH dan Temperature.**
 
 ![image](https://github.com/user-attachments/assets/2a92e1d6-a8db-4da4-8db2-1797620ac2f3)
 
 **Keterangan:**
+
 Gambar Kiri (Distribusi pH)
 - Mayoritas sampel memiliki nilai pH antara 6-7, menunjukkan susu dalam kondisi normal.
 - Nilai di luar rentang tersebut menunjukkan potensi susu asam atau terkontaminasi.
