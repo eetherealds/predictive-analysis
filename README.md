@@ -1,13 +1,12 @@
 # Laporan Proyek Machine Learning - Dearni Lambardo Saragih
 
-## Domain Proyek
+## Domain Proyek: Pangan dan Kesehatan
 
 Mengingat banyaknya orang yang minum susu, kualitas susu merupakan faktor penting dalam industri pangan dan kesehatan. Namun, banyak parameter fisik dan kimia, termasuk pH, suhu, rasa, bau, kandungan lemak, kekeruhan, dan warna memengaruhi kualitas susu. Untuk mendukung proses inspeksi kualitas di industri, sistem prediksi kualitas susu yang tepat dan efektif diperlukan.
 
 Dalam proyek ini, digunakan pendekatan machine learning untuk memprediksi kualitas susu berdasarkan atribut yang sudah disebutkan di atas. Dataset yang digunakan terdiri dari 1.059 sampel susu dalam kategori kualitas rendah, sedang, dan tinggi. Tujuan dari proyek ini adalah untuk mengembangkan sistem prediksi kualitas susu berbasis machine learning dengan menggunakan algoritma Random Forest dan Support Vector Machine (SVM).
 
-**Referensi Jurnal:**
-https://www.researchgate.net/publication/376064637_Milk_Quality_Prediction_Using_Machine_Learning
+[Link Jurnal](https://www.researchgate.net/publication/376064637_Milk_Quality_Prediction_Using_Machine_Learning)
 
 ## Business Understanding
 ### Problem Statements
