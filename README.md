@@ -55,10 +55,10 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 5. Mengecek apakah terdapat nilai kosong pada setiap kolom.
 ![image](https://github.com/user-attachments/assets/80843e48-0219-4fcb-a26f-850c759871a7)
 
-6. Setelah itu kolom 'Grade' diubah menjadi nilai numerik menggunakan mapping.
+7. Setelah itu kolom 'Grade' diubah menjadi nilai numerik menggunakan mapping.
 ![image](https://github.com/user-attachments/assets/c45aa0f7-d802-482b-9625-1380663ce55a)
 
-7. Membuat plot distribusi kelas susu.
+8. Membuat plot distribusi kelas susu.
 ![image](https://github.com/user-attachments/assets/06eff0d0-d525-43ca-aaf1-2668131f271b)
 
 **Keterangan:**
