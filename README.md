@@ -56,7 +56,7 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
    
 ![image](https://github.com/user-attachments/assets/0d478c4f-9400-42cd-8120-b27ef7144bce)
 
-Keterangan:
+**Keterangan:**
 - count : Jumlah data (1059 untuk semua kolom)
 - mean : Rata-rata (contoh: pH ~6.63, Temperatur ~44.2°C)
 - std : Simpangan baku (variabilitas data)
@@ -159,15 +159,24 @@ Colour by Grade
 ![image](https://github.com/user-attachments/assets/bad2ce77-c045-40db-9196-d561a803f4a0)
 
 ## Modeling
-Dalam proyek ini saya menggunakan dua mosel baseline yaitu Random Forest dan Support Vector Machine (SVM). Random forest menghasilkan akurasi 99.53% dan F1-score 99.53%, sedangkan SVM menghasilkan akurasi 92.92% dengan F1-score 92.92%.
+Pada tahap ini saya menggunakan dua algoritma machine learning yaitu Random Forest (RF) dan Support Vector Machine (SVM) untuk menyelesasikan permasalahan klasifikasi dalam Milk Quality Dataset yang diimplementasikan menggunakan pipeline untuk memastikan proses preprocessing dan pelatihan model dilakukan secara terintegrasi. 
 
-![image](https://github.com/user-attachments/assets/4d93d683-814a-4b12-8a18-67619ba5a5dd)
+**Random Forest**
+RF adalah algoritma ensemble yang menggunakan banyak pohon keputusan untuk menghasilkan prediksi yang stabil dan akurat. RF memiliki kelebihan seperti ketahanan terhadap overfitting dan kemampuan menangani data dengan missing values, tetapi membutuhkan lebih banyak sumber daya komputasi.
 
-**Kelebihan dan Kekurangan:**
-1. Random Forest: sangat akurat, tahan terhadap overfitting, mampu menangani data dengan missing value.
-2. SVM          : efektif pada data yang tinggi, tapi lebih sensitif terhadap parameter dan skala fitur.
+Pipeline untuk model RF menggunakan  `RandomForestClassifier` dari library `sklearn.ensemble`. Pipeline ini terdiri dari preprocessing data `preprocessor` dan pelatihan model. Data pelatihan (`X_train`, `y_train`) digunakan untuk melatih model dengan `fit`, sedangkan prediksi dilakukan pada data pengujian (`X_test`) menggunakan `predict`.
 
-Karena Random Forest memiliki performa yang lebih baik dibanding SVM dlam semua metrik evaluasi, maka dipilih sebagai model terbaik dlam proyek ini.
+![image](https://github.com/user-attachments/assets/76642aae-3d1d-4434-bb6c-8272330aaa37)
+
+![image](https://github.com/user-attachments/assets/1fd673ec-4b15-482a-bddc-c62299548743)
+
+Sedangkan, pipeline SVM menggunakan `SVC` dari sklearn.svm. Pipeline ini juga terdiri dari preprocessing data dan pelatihan model. Parameter `probability=True` digunakan untuk memungkinkan keluaran probabilitas prediksi. SVM bekerja dengan mencari hyperplane optimal untuk memisahkan kelas dalam data dan sangat efektif untuk data berdimensi tinggi. Namun, SVM sensitif terhadap noise dan membutuhkan tuning parameter seperti `C` dan `gamma`.
+
+![image](https://github.com/user-attachments/assets/4a3102b4-34a2-4a2e-aecc-4c2af6fbb4a9)
+
+![image](https://github.com/user-attachments/assets/4a822704-cd4b-4306-aaa4-5249c6cd2a40)
+
+Karena Random Forest memiliki performa yang lebih baik dibanding SVM dalam semua metrik evaluasi, maka dipilih sebagai model terbaik dalam proyek ini.
 
 ## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
