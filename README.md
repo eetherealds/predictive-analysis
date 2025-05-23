@@ -208,7 +208,7 @@ Pada tahap evaluasi ini saya menggunakan beberapa metrik untuk mengukur performa
 - **F1-score (weighted)**: 99.53% — Menunjukkan keseimbangan yang sangat baik antara precision dan recall di semua kelas.
 - **Precision** untuk kelas "Low (0)" dan "Medium (1)" adalah 100%, sedangkan untuk kelas "High (2)" adalah 98%.
 - **Recall** untuk semua kelas mendekati atau mencapai 100%.
-- - **F1-score** menunjukkan performa konsisten di semua kelas, dengan nilai mendekati atau mencapai 1.00.
+- **F1-score** menunjukkan performa konsisten di semua kelas, dengan nilai mendekati atau mencapai 1.00.
 
 ![image](https://github.com/user-attachments/assets/a18287a0-13e2-46d9-bbe0-ff33d52c0f78)
 
