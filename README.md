@@ -67,15 +67,15 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 - 75% : Kuartil ketiga (batas 25% data teratas)
 - max : Nilai maksimum
   
-8. Mengecek apakah terdapat nilai kosong pada setiap kolom. Disini tidak terdapat nilai kosong di seluruh kolom dataset.
+7. Mengecek apakah terdapat nilai kosong pada setiap kolom. Disini tidak terdapat nilai kosong di seluruh kolom dataset.
    
 ![image](https://github.com/user-attachments/assets/80843e48-0219-4fcb-a26f-850c759871a7)
 
-10. Lalu kita mengubah kolom `Grade` menjadi nilai numerik menggunakan mapping. Sekarang diasumsikan Low (0), Meidum (1), dan High (2).
+8. Lalu kita mengubah kolom `Grade` menjadi nilai numerik menggunakan mapping. Sekarang diasumsikan Low (0), Meidum (1), dan High (2).
     
 ![image](https://github.com/user-attachments/assets/c45aa0f7-d802-482b-9625-1380663ce55a)
 
-12. Membuat plot distribusi kelas susu.
+9. Membuat plot distribusi kelas susu.
     
 ![image](https://github.com/user-attachments/assets/06eff0d0-d525-43ca-aaf1-2668131f271b)
 
@@ -165,26 +165,28 @@ Pada tahap ini saya menggunakan dua algoritma machine learning yaitu Random Fore
 **Random Forest**
 RF adalah algoritma ensemble yang menggunakan banyak pohon keputusan untuk menghasilkan prediksi yang stabil dan akurat. RF memiliki kelebihan seperti ketahanan terhadap overfitting dan kemampuan menangani data dengan missing values, tetapi membutuhkan lebih banyak sumber daya komputasi.
 
-Pipeline untuk model RF menggunakan  `RandomForestClassifier` dari library `sklearn.ensemble`. Pipeline ini terdiri dari preprocessing data `preprocessor` dan pelatihan model. Data pelatihan (`X_train`, `y_train`) digunakan untuk melatih model dengan `fit`, sedangkan prediksi dilakukan pada data pengujian (`X_test`) menggunakan `predict`.
+Pipeline untuk model RF menggunakan  `RandomForestClassifier` dari library `sklearn.ensemble`. Disini menggunakan parameter seed `random_state=42`. Pipeline ini terdiri dari preprocessing data `preprocessor` dan pelatihan model. Data pelatihan (`X_train`, `y_train`) digunakan untuk melatih model dengan `fit`, sedangkan prediksi dilakukan pada data pengujian (`X_test`) menggunakan `predict`.
 
 ![image](https://github.com/user-attachments/assets/76642aae-3d1d-4434-bb6c-8272330aaa37)
 
 ![image](https://github.com/user-attachments/assets/1fd673ec-4b15-482a-bddc-c62299548743)
 
-Sedangkan, pipeline SVM menggunakan `SVC` dari sklearn.svm. Pipeline ini juga terdiri dari preprocessing data dan pelatihan model. Parameter `probability=True` digunakan untuk memungkinkan keluaran probabilitas prediksi. SVM bekerja dengan mencari hyperplane optimal untuk memisahkan kelas dalam data dan sangat efektif untuk data berdimensi tinggi. Namun, SVM sensitif terhadap noise dan membutuhkan tuning parameter seperti `C` dan `gamma`.
+Sedangkan, pipeline SVM menggunakan `SVC` dari sklearn.svm. Pipeline ini juga terdiri dari preprocessing data dan pelatihan model. Disini menggunakan parameter seed juga yaitu `random_state=42`. Parameter `probability=True` digunakan untuk memungkinkan keluaran probabilitas prediksi. SVM bekerja dengan mencari hyperplane optimal untuk memisahkan kelas dalam data dan sangat efektif untuk data berdimensi tinggi. Namun, SVM sensitif terhadap noise dan membutuhkan tuning parameter seperti `C` dan `gamma`.
 
 ![image](https://github.com/user-attachments/assets/4a3102b4-34a2-4a2e-aecc-4c2af6fbb4a9)
 
 ![image](https://github.com/user-attachments/assets/4a822704-cd4b-4306-aaa4-5249c6cd2a40)
 
-Karena Random Forest memiliki performa yang lebih baik dibanding SVM dalam semua metrik evaluasi, maka dipilih sebagai model terbaik dalam proyek ini.
+Karena Random Forest memiliki performa yang lebih baik dibanding SVM, maka dipilih sebagai model terbaik dalam proyek ini.
 
 ## Evaluation
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
+Pada tahap evaluasi ini saya menggunakan beberapa metrik untuk mengukur performa model. yaitu `accuracy`, `precission`, `recall` dan `F1-score`. Disini saya memakai confusion matrix untuk memberikan visualisasi mengenai hasil klasifikasi model secara lebih rinci.
 
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
+### **Metrik Evaluasi yang Digunakan**
+1. Accuracy: Mengukur presentase prediksi yang benar dibandingkan dengan total data.
+   \[
+   Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+   \]
 
 Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
 
