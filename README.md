@@ -75,15 +75,19 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 
 **Exploratory Data Analysis**
 1. Membuat grafik distribusi pH dan Temperature.
+
 ![image](https://github.com/user-attachments/assets/2a92e1d6-a8db-4da4-8db2-1797620ac2f3)
 
 2. Membuat grafik distribusi pH dan Temperature terhadap kategori Grade.
+
 ![image](https://github.com/user-attachments/assets/92472f18-3ba5-4b64-b2dc-7ced2d30a25d)
 
 3. Menampilkan grafik semua parameter terhadap grade.
+
 ![image](https://github.com/user-attachments/assets/ee40fcc0-7b74-445b-b3c2-bc08ab1df2bb)
 
 4. Korelasi numerik menggunakan heatmap.
+
 ![image](https://github.com/user-attachments/assets/b8f62c3b-7ab3-412c-9f72-62166ffbb0a1)
 
 ## Data Preparation
@@ -100,6 +104,7 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 
 ## Modeling
 Dalam proyek ini saya menggunakan dua mosel baseline yaitu Random Forest dan Support Vector Machine (SVM). Random forest menghasilkan akurasi 99.53% dan F1-score 99.53%, sedangkan SVM menghasilkan akurasi 92.92% dengan F1-score 92.92%.
+
 ![image](https://github.com/user-attachments/assets/4d93d683-814a-4b12-8a18-67619ba5a5dd)
 
 **Kelebihan dan Kekurangan:**
