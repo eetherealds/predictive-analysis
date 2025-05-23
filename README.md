@@ -22,10 +22,10 @@ Dalam proyek ini, digunakan pendekatan machine learning untuk memprediksi kualit
 ### Solution statements
 
 - Mengimplementasikan dua algoritma machine learning (Random Forest dan SVM) sebagai baseline model untuk memprediksi kualitas susu.
-- Melakukan evaluasi model menggunakan metrik akurasi, F1-score, dan confusion matrix untuk menganalisis performa dan tingkat kesalahan prediksi paling efektif dalam memprediksi kualitas susu pada setiap kelas
+- Melakukan evaluasi model menggunakan metrik akurasi, F1-score, dan confusion matrix untuk menganalisis performa dan tingkat kesalahan prediksi paling efektif dalam memprediksi kualitas susu pada setiap kelas.
 
 ## Data Understanding
-Dataset yang digunakan dalam proyek ini memiliki 1.059 sampel susu dengan 8 atribut yang mencakup parameter fisik dan kimia. Dataset ini berisi kategori kualitas susu yang diklasifikasikan sebagai rendah (low), sedang (medium), dan tinggi (high) 
+Dataset yang digunakan dalam proyek ini memiliki 1.059 sampel susu dengan 8 atribut yang mencakup parameter fisik dan kimia. Dataset ini berisi kategori kualitas susu yang diklasifikasikan sebagai rendah (low), sedang (medium), dan tinggi (high).
 
 Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 
@@ -155,7 +155,7 @@ Colour by Grade
 3. Membuat pipeline untuk transformasi data numerik dan kategorikal.
    - Pipeline numerik menggunakan `StandardScaler` untuk menstandarkan data numerik sehingga memiliki mean 0 dan standar deviasi 1.
    - Pipeline kategorikal menggunakan `OneHotEncoder` untuk mengubah data kategorikal menjadi representasi numerik.
-4. Menggabungkan pipeline numerik dan kategorikal ke dalam satu perpocessor untuk memastikan transformasi dilakukan secara paralel pada kolom yang sesuai
+4. Menggabungkan pipeline numerik dan kategorikal ke dalam satu perpocessor untuk memastikan transformasi dilakukan secara paralel pada kolom yang sesuai.
 5. Membagi dataset ke dalam data latih (80%) dan data uji (20%) untuk memastikan model dilatih dan diuji pada data yang berbeda untuk menghindari overfitting.
 
 ![image](https://github.com/user-attachments/assets/bad2ce77-c045-40db-9196-d561a803f4a0)
@@ -183,12 +183,36 @@ Karena Random Forest memiliki performa yang lebih baik dibanding SVM, maka dipil
 Pada tahap evaluasi ini saya menggunakan beberapa metrik untuk mengukur performa model. yaitu `accuracy`, `precission`, `recall` dan `F1-score`. Disini saya memakai confusion matrix untuk memberikan visualisasi mengenai hasil klasifikasi model secara lebih rinci.
 
 ### **Metrik Evaluasi yang Digunakan**
-1. Accuracy: Mengukur presentase prediksi yang benar dibandingkan dengan total data.
-   \[
-   Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
-   \]
+1. **Accuracy:** Mengukur presentase prediksi yang benar dibandingkan dengan total data.
 
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
+![image](https://github.com/user-attachments/assets/8a370777-6d95-44e8-8f81-bbd6ecb5d0b6)
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+2. **Precission:** Mengindikasikan seberapa banyak prediksi positif yang benar dibandingkan dengan total prediksi positif. Precision penting jika kesalahan positif palsu (false positive) perlu diminimalkan.
+   
+![image](https://github.com/user-attachments/assets/374d79d4-c5e2-4e69-9496-e72c076cc675)
+
+3. **Recall:** Mengukur kemampuan model dalam mendeteksi seluruh sampel positif yang sebenarnya. Recall penting jika kesalahan negatif palsu (false negative) harus diminimalkan.
+   
+![image](https://github.com/user-attachments/assets/d95290f4-5c29-4224-b1e3-e540b8e47989)
+
+4. **F1-score:** Mengombinasikan precision dan recall menjadi satu nilai rata-rata tertimbang, sehingga memberikan gambaran tentang keseimbangan performa model di semua kelas.
+
+![image](https://github.com/user-attachments/assets/101a1847-09ae-40a1-885d-3a5cc0e9d39f)
+
+### **Hasil Evaluasi Model**
+
+![image](https://github.com/user-attachments/assets/2123e0dc-86da-48d7-9b38-ee56cf2b9e7f)
+
+#### **Random Forest**
+- **Accuracy**: 99.53% — Model ini menunjukkan akurasi sangat tinggi, hampir semua sampel diklasifikasikan dengan benar.
+- **F1-score (weighted)**: 99.53% — Menunjukkan keseimbangan yang sangat baik antara precision dan recall di semua kelas.
+- **Precision** untuk kelas "Low (0)" dan "Medium (1)" adalah 100%, sedangkan untuk kelas "High (2)" adalah 98%.
+- **Recall** untuk semua kelas mendekati atau mencapai 100%.
+- - **F1-score** menunjukkan performa konsisten di semua kelas, dengan nilai mendekati atau mencapai 1.00.
+
+![image](https://github.com/user-attachments/assets/a18287a0-13e2-46d9-bbe0-ff33d52c0f78)
+
+- **Confusion Matrix**:
+  - **Low (0)**: 85 sampel diklasifikasikan dengan benar, 1 salah ke "High (2)".
+  - **Medium (1)**: Semua 75 sampel diklasifikasikan dengan benar tanpa kesalahan.
+  - **High (2)**: Semua 51 sampel diklasifikasikan dengan benar tanpa kesalahan.
