@@ -16,12 +16,12 @@ Dalam proyek ini, digunakan pendekatan machine learning untuk memprediksi kualit
 
 ### Goals
 
-- Mengembangkan model machine learning untuk memprediksi kualitas susu berdasarkan parameter dataset.
-- Membandingkan performa algoritma Random Forest dan Support Vector Machine (SVM) untuk prediksi kualitas susu.
-
+- Mengetahui cara memprediksi kualitas susu berdasarkan parameter fisik dan kimia yang ada dalam dataset.
+- Mengetahui algoritma machine learning yang paling efektif dalam memprediksi kualitas susu.
+  
 ### Solution statements
 - Mengimplementasikan dua algoritma machine learning (Random Forest dan SVM) sebagai baseline model untuk memprediksi kualitas susu.
-- Melakukan evaluasi model menggunakan metrik akurasi, F1-score, dan confusion matrix untuk menganalisis performa dan tingkat kesalahan prediksi pada setiap kelas.
+- Melakukan evaluasi model menggunakan metrik akurasi, F1-score, dan confusion matrix untuk menganalisis performa dan tingkat kesalahan prediksi paling efektif dalam memprediksi kualitas susu pada setiap kelas
 
 ## Data Understanding
 Dataset yang digunakan dalam proyek ini memiliki 1.059 sampel susu dengan 8 atribut yang mencakup parameter fisik dan kimia. Dataset ini berisi kategori kualitas susu yang diklasifikasikan sebagai rendah (low), sedang (medium), dan tinggi (high) 
