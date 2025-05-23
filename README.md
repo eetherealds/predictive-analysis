@@ -217,9 +217,10 @@ Pada tahap evaluasi ini saya menggunakan beberapa metrik untuk mengukur performa
   - **Medium (1)**: Semua 75 sampel diklasifikasikan dengan benar tanpa kesalahan.
   - **High (2)**: Semua 51 sampel diklasifikasikan dengan benar tanpa kesalahan.
 
+#### **Support Vector Machine (SVM)**
+
 ![image](https://github.com/user-attachments/assets/53132c5b-e0d6-45eb-b737-8fe94e855166)
 
-#### **Support Vector Machine (SVM)**
 - **Accuracy**: 92.92% — Performa cukup baik, namun lebih rendah dibandingkan dengan Random Forest.
 - **F1-score (weighted)**: 92.92% — Menunjukkan keseimbangan yang baik, namun terdapat kekurangan pada beberapa kelas.
 - **Precision** untuk kelas "Low (0)" adalah 98%, sedangkan untuk "Medium (1)" dan "High (2)" masing-masing adalah 91% dan 88%.
