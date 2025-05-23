@@ -163,7 +163,6 @@ Colour by Grade
 ## Modeling
 Pada tahap ini saya menggunakan dua algoritma machine learning yaitu Random Forest (RF) dan Support Vector Machine (SVM) untuk menyelesasikan permasalahan klasifikasi dalam Milk Quality Dataset yang diimplementasikan menggunakan pipeline untuk memastikan proses preprocessing dan pelatihan model dilakukan secara terintegrasi. 
 
-**Random Forest**
 RF adalah algoritma ensemble yang menggunakan banyak pohon keputusan untuk menghasilkan prediksi yang stabil dan akurat. RF memiliki kelebihan seperti ketahanan terhadap overfitting dan kemampuan menangani data dengan missing values, tetapi membutuhkan lebih banyak sumber daya komputasi.
 
 Pipeline untuk model RF menggunakan  `RandomForestClassifier` dari library `sklearn.ensemble`. Disini menggunakan parameter seed `random_state=42`. Pipeline ini terdiri dari preprocessing data `preprocessor` dan pelatihan model. Data pelatihan (`X_train`, `y_train`) digunakan untuk melatih model dengan `fit`, sedangkan prediksi dilakukan pada data pengujian (`X_test`) menggunakan `predict`.
