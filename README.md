@@ -81,18 +81,19 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 ![image](https://github.com/user-attachments/assets/ee40fcc0-7b74-445b-b3c2-bc08ab1df2bb)
 
 4. Korelasi numerik menggunakan heatmap.
+![image](https://github.com/user-attachments/assets/b8f62c3b-7ab3-412c-9f72-62166ffbb0a1)
+
 ## Data Preparation
 1. Memisahkan fitur (x) dan label (y)
+   - fitur (x) mencakup semua kolom kecuali 'Grade', sedangkan label (y) adalah kolom Grade.
+   - Tujuan: Memisahkan variabel independen dan dependen untuk pemodelan
 2. Menentukan kolom kategorikal dan numerik dari data fitur (x), lalu menampilkan hasil identifikasi kolom.
 3. Membuat pipeline untuk transformasi data numerik dan kategorikal.
-4. Menggabungkan pipeline numerik dan kategorikal ke dalam satu perpocessor
-5. Membagi dataset ke dalam data latih (80%) dan data uji (20%).
+   - Pipeline numerik menggunakan `StandardScaler` untuk menstandarkan data numerik sehingga memiliki mean 0 dan standar deviasi 1.
+   - Pipeline kategorikal menggunakan `OneHotEncoder` untuk mengubah data kategorikal menjadi representasi numerik.
+4. Menggabungkan pipeline numerik dan kategorikal ke dalam satu perpocessor untuk memastikan transformasi dilakukan secara paralel pada kolom yang sesuai
+5. Membagi dataset ke dalam data latih (80%) dan data uji (20%) untuk memastikan model dilatih dan diuji pada data yang berbeda untuk menghindari overfitting.
 ![image](https://github.com/user-attachments/assets/bad2ce77-c045-40db-9196-d561a803f4a0)
-
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
 
 ## Modeling
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
