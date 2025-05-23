@@ -12,35 +12,37 @@ Referensi Jurnal: https://www.researchgate.net/publication/376064637_Milk_Qualit
 ## Business Understanding
 ### Problem Statements
 
-- Bag
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+- Bagaimana cara memprediksi kualitas susu berdasarkan parameter fisik dan kimia yang ada dalam dataset?
+- Algoritma machine learning apa yang paling efektif dalam memprediksi kualitas susu?
 
 ### Goals
 
-Menjelaskan tujuan dari pernyataan masalah:
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
-
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
+- Mengembangkan model machine learning untuk memprediksi kualitas susu berdasarkan parameter dataset.
+- Membandingkan performa algoritma Random Forest dan Support Vector Machine (SVM) untuk prediksi kualitas susu.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
-    ### Solution statements
+
+### Solution statements
     -  Mengimplementasikan dua algoritma machine learning (Random Forest dan SVM) sebagai baseline model untuk memprediksi kualitas susu.
     -  Melakukan evaluasi model menggunakan metrik akurasi, F1-score, dan confusion matrix untuk menganalisis performa dan tingkat kesalahan prediksi pada setiap kelas.
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
+Dataset yang digunakan dalam proyek ini memiliki 1.059 sampel susu dengan 8 atribut yang mencakup parameter fisik dan kimia. Dataset ini berisi kategori kualitas susu yang diklasifikasikan sebagai rendah (low), sedang (medium), dan tinggi (high) 
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
+Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
+### Variabel-variabel pada Milk Quality dataset adalah sebagai berikut:
+- pH : Tingkat keasaman susu
+- Temprature : Suhu susu saat pengukuran
+- Taste : Indikator rasa (0 = tidak enak, 1 = enak)
+- Odor : Indikator bau (0 = bau tidak sedap, 1 = normal)
+- Fat : Kandungan lemak (0 = rendah, 1 = tinggi)
+- Turbidity : Kekeruhan (0 = rendah, 1 = tinggi)
+- Colour : Nilai intensitas warna susu
+- Grade : Kualitas susu (low, medium, high)
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
+
 - Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
 
 ## Data Preparation
