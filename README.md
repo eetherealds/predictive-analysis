@@ -41,24 +41,31 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 
 **Memahami Data:**
 1. Membaca data dari file csv dan menampilkan 5 baris pertama.
+
 ![image](https://github.com/user-attachments/assets/51fcb29c-cde2-4dc8-a399-4a0f659501c8)
 
 2. Menampilkan jumlah baris dan kolom dalam DataFrame.
+   
 ![image](https://github.com/user-attachments/assets/136dd4ec-8f9c-4ae3-9324-d1c3005d73a7)
 
-3. Menampilkan informasi ringkas tentang DataFrame.
+4. Menampilkan informasi ringkas tentang DataFrame.
+   
 ![image](https://github.com/user-attachments/assets/28668d0e-0572-4b8c-a9fc-ea8524452679)
 
-4. Menampilkan statistik deskriptif untuk kolom numerik.
+6. Menampilkan statistik deskriptif untuk kolom numerik.
+   
 ![image](https://github.com/user-attachments/assets/0d478c4f-9400-42cd-8120-b27ef7144bce)
 
-5. Mengecek apakah terdapat nilai kosong pada setiap kolom.
+8. Mengecek apakah terdapat nilai kosong pada setiap kolom.
+   
 ![image](https://github.com/user-attachments/assets/80843e48-0219-4fcb-a26f-850c759871a7)
 
-7. Setelah itu kolom 'Grade' diubah menjadi nilai numerik menggunakan mapping.
+10. Setelah itu kolom 'Grade' diubah menjadi nilai numerik menggunakan mapping.
+    
 ![image](https://github.com/user-attachments/assets/c45aa0f7-d802-482b-9625-1380663ce55a)
 
-8. Membuat plot distribusi kelas susu.
+12. Membuat plot distribusi kelas susu.
+    
 ![image](https://github.com/user-attachments/assets/06eff0d0-d525-43ca-aaf1-2668131f271b)
 
 **Keterangan:**
