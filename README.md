@@ -44,23 +44,51 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 - Grade : Kualitas susu (low, medium, high)
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
-1. Membaca data dari file csv dan menampilkan 5 baris pertama
+1. Membaca data dari file csv dan menampilkan 5 baris pertama.
 ![image](https://github.com/user-attachments/assets/51fcb29c-cde2-4dc8-a399-4a0f659501c8)
 
-2. Menampilkan jumlah baris dan kolom dalam DataFrame
+2. Menampilkan jumlah baris dan kolom dalam DataFrame.
 ![image](https://github.com/user-attachments/assets/136dd4ec-8f9c-4ae3-9324-d1c3005d73a7)
 
-3. Menampilkan informasi ringkas tentang DataFrame
+3. Menampilkan informasi ringkas tentang DataFrame.
 ![image](https://github.com/user-attachments/assets/28668d0e-0572-4b8c-a9fc-ea8524452679)
 
-4. Menampilkan statistik deskriptif untuk kolom numerik
+4. Menampilkan statistik deskriptif untuk kolom numerik.
 ![image](https://github.com/user-attachments/assets/0d478c4f-9400-42cd-8120-b27ef7144bce)
 
+5. Mengecek apakah terdapat nilai kosong pada setiap kolom.
+![image](https://github.com/user-attachments/assets/80843e48-0219-4fcb-a26f-850c759871a7)
 
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+6. Setelah itu kolom 'Grade' diubah menjadi nilai numerik menggunakan mapping.
+![image](https://github.com/user-attachments/assets/c45aa0f7-d802-482b-9625-1380663ce55a)
 
+7. Membuat plot distribusi kelas susu.
+![image](https://github.com/user-attachments/assets/06eff0d0-d525-43ca-aaf1-2668131f271b)
+
+**Keterangan:**
+- Low (0) berjumlah 429 sampel, menjadi kelas dengan jumlah data terbanyak.
+- Medium (1) berjumlah 374 sampel.
+- High (2) berjumlah 256 sampel, menjadi kelas dengan jumlah data paling sedikit.
+
+**Exploratory Data Analysis**
+1. Membuat grafik distribusi pH dan Temperature.
+![image](https://github.com/user-attachments/assets/2a92e1d6-a8db-4da4-8db2-1797620ac2f3)
+
+2. Membuat grafik distribusi pH dan Temperature terhadap kategori Grade.
+![image](https://github.com/user-attachments/assets/92472f18-3ba5-4b64-b2dc-7ced2d30a25d)
+
+3. Menampilkan grafik semua parameter terhadap grade.
+![image](https://github.com/user-attachments/assets/ee40fcc0-7b74-445b-b3c2-bc08ab1df2bb)
+
+4. Korelasi numerik menggunakan heatmap.
 ## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
+1. Memisahkan fitur (x) dan label (y)
+2. Menentukan kolom kategorikal dan numerik dari data fitur (x), lalu menampilkan hasil identifikasi kolom.
+3. Membuat pipeline untuk transformasi data numerik dan kategorikal.
+4. Menggabungkan pipeline numerik dan kategorikal ke dalam satu perpocessor
+5. Membagi dataset ke dalam data latih (80%) dan data uji (20%).
+![image](https://github.com/user-attachments/assets/bad2ce77-c045-40db-9196-d561a803f4a0)
+
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
 - Menjelaskan proses data preparation yang dilakukan
