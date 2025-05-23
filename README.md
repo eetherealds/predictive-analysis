@@ -8,7 +8,8 @@ Mengingat banyaknya orang yang minum susu, kualitas susu merupakan faktor pentin
 
 Dalam proyek ini, digunakan pendekatan machine learning untuk memprediksi kualitas susu berdasarkan atribut yang sudah disebutkan di atas. Dataset yang digunakan terdiri dari 1.059 sampel susu dalam kategori kualitas rendah, sedang, dan tinggi. Tujuan dari proyek ini adalah untuk mengembangkan sistem prediksi kualitas susu berbasis machine learning dengan menggunakan algoritma Random Forest dan Support Vector Machine (SVM).
 
-Referensi Jurnal: https://www.researchgate.net/publication/376064637_Milk_Quality_Prediction_Using_Machine_Learning
+**Referensi Jurnal:**
+https://www.researchgate.net/publication/376064637_Milk_Quality_Prediction_Using_Machine_Learning
 
 ## Business Understanding
 ### Problem Statements
@@ -43,6 +44,8 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 - Grade : Kualitas susu (low, medium, high)
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
+- membaca data dari file csv dan menampilkan 5 baris pertama
+![image](https://github.com/user-attachments/assets/51fcb29c-cde2-4dc8-a399-4a0f659501c8)
 
 - Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
 
