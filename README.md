@@ -29,7 +29,7 @@ Dataset yang digunakan dalam proyek ini memiliki 1.059 sampel susu dengan 8 atri
 
 Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 
-### Variabel-variabel pada Milk Quality dataset adalah sebagai berikut:
+### Variabel pada Milk Quality dataset
 - pH : Tingkat keasaman susu
 - Temprature : Suhu susu saat pengukuran
 - Taste : Indikator rasa (0 = tidak enak, 1 = enak)
@@ -38,6 +38,7 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 - Turbidity : Kekeruhan (0 = rendah, 1 = tinggi)
 - Colour : Nilai intensitas warna susu
 - Grade : Kualitas susu (low, medium, high)
+
 
 **Memahami Data:**
 1. Membaca data dari file csv dan menampilkan 5 baris pertama.
