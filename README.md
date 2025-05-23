@@ -22,8 +22,6 @@ https://www.researchgate.net/publication/376064637_Milk_Quality_Prediction_Using
 - Mengembangkan model machine learning untuk memprediksi kualitas susu berdasarkan parameter dataset.
 - Membandingkan performa algoritma Random Forest dan Support Vector Machine (SVM) untuk prediksi kualitas susu.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-
 ### Solution statements
 - Mengimplementasikan dua algoritma machine learning (Random Forest dan SVM) sebagai baseline model untuk memprediksi kualitas susu.
 - Melakukan evaluasi model menggunakan metrik akurasi, F1-score, dan confusion matrix untuk menganalisis performa dan tingkat kesalahan prediksi pada setiap kelas.
@@ -43,7 +41,7 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 - Colour : Nilai intensitas warna susu
 - Grade : Kualitas susu (low, medium, high)
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
+**Memahami Data:**
 1. Membaca data dari file csv dan menampilkan 5 baris pertama.
 ![image](https://github.com/user-attachments/assets/51fcb29c-cde2-4dc8-a399-4a0f659501c8)
 
