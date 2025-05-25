@@ -71,7 +71,7 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
    
 ![image](https://github.com/user-attachments/assets/80843e48-0219-4fcb-a26f-850c759871a7)
 
-6. Lalu kita mengubah kolom `Grade` menjadi nilai numerik menggunakan mapping. Sekarang diasumsikan Low (0), Meidum (1), dan High (2).
+6. Lalu kita mengubah kolom `Grade` menjadi nilai numerik menggunakan mapping (Encoding Fitur Target). Sekarang diasumsikan Low (0), Meidum (1), dan High (2).
     
 ![image](https://github.com/user-attachments/assets/c45aa0f7-d802-482b-9625-1380663ce55a)
 
@@ -177,10 +177,10 @@ Sedangkan, pipeline SVM menggunakan `SVC` dari `sklearn.svm`. Pipeline ini juga 
 
 ![image](https://github.com/user-attachments/assets/4a822704-cd4b-4306-aaa4-5249c6cd2a40)
 
-Karena Random Forest memiliki performa yang lebih baik dibanding SVM, maka dipilih sebagai model terbaik dalam proyek ini.
+Setelah semua model dijalankan, penulis memilih algoritma Random Forest sebagai model terbaik yang akan digunakan sebagai solusi untuk memprediksi kualitas susu. Karena, model ini memiliki akurasi dan skor F1 tertinggi dibandingkan SVM, serta kesalahan klasifikasi pada matriks confusion yang lebih kecil dibanding model lainnya. Penjelasan lebih lengkap mengenai alasan ini ada pada bagian **evaluation**.
 
 ## Evaluation
-Pada tahap evaluasi ini saya menggunakan beberapa metrik untuk mengukur performa model. yaitu `accuracy`, `precission`, `recall` dan `F1-score`. Disini saya memakai confusion matrix untuk memberikan visualisasi mengenai hasil klasifikasi model secara lebih rinci.
+Pada tahap evaluasi ini penulis menggunakan beberapa metrik untuk mengukur performa model. yaitu `accuracy`, `precission`, `recall` dan `F1-score`. Disini saya memakai confusion matrix untuk memberikan visualisasi mengenai hasil klasifikasi model secara lebih rinci.
 
 ### **Metrik Evaluasi yang Digunakan**
 1. **Accuracy:** Mengukur presentase prediksi yang benar dibandingkan dengan total data.
@@ -233,3 +233,11 @@ Pada tahap evaluasi ini saya menggunakan beberapa metrik untuk mengukur performa
 - **Low (0)**: 84 sampel benar, 1 salah ke "Medium (1)", dan 1 salah ke "High (2)".
 - **Medium (1)**: 68 sampel benar, 2 salah ke "Low (0)", dan 5 salah ke "High (2)".
 - **High (2)**: 45 sampel benar, 6 salah ke "Medium (1)".
+
+## Kesimpulan
+Model yang dikembangkan dalam proyek ini berhasil memprediksi kualitas susu berdasarkan parameter fisik dan kimia. Sistem dapat mengklasifikasikan susu ke dalam tiga kategori kualitas (low, medium, dan high) dengan tingkat akurasi yang tinggi, khususnya dengan model Random Forest yang mencapai akurasi 99,53%. Ini menunjukkan bahwa masalah utama dalam memprediksi kualitas susu berdasarkan data parameter telapak tangan adalah bagaimana memprediksi kualitas susu dengan akurasi yang tinggi.
+
+Selain itu, laporan ini menjawab pertanyaan kedua, yaitu "algoritma pembelajaran mesin apa yang paling efektif dalam memprediksi kualitas susu?" dengan membandingkan dua algoritma—Random Forest dan SVM. Hasil evaluasi menunjukkan bahwa Random Forest lebih baik daripada SVM dalam hal ini.
+ 
+## Referensi
+F. Fauzi and A. R. Abdullah, "Milk Quality Prediction Using Machine Learning," ResearchGate, Nov. 2023. [Online]. Available: https://www.researchgate.net/publication/376064637_Milk_Quality_Prediction_Using_Machine_Learning 
