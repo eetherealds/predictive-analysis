@@ -235,7 +235,7 @@ Pada tahap evaluasi ini penulis menggunakan beberapa metrik untuk mengukur perfo
 - **High (2)**: 45 sampel benar, 6 salah ke "Medium (1)".
 
 ## Kesimpulan
-Model yang dikembangkan dalam proyek ini berhasil memprediksi kualitas susu berdasarkan parameter fisik dan kimia. Sistem dapat mengklasifikasikan susu ke dalam tiga kategori kualitas (low, medium, dan high) dengan tingkat akurasi yang tinggi, khususnya dengan model Random Forest yang mencapai akurasi 99,53%. Ini menunjukkan bahwa masalah utama dalam memprediksi kualitas susu berdasarkan data parameter telapak tangan adalah bagaimana memprediksi kualitas susu dengan akurasi yang tinggi.
+Model yang dikembangkan dalam proyek ini berhasil memprediksi kualitas susu berdasarkan parameter fisik dan kimia. Sistem dapat mengklasifikasikan susu ke dalam tiga kategori kualitas (low, medium, dan high) dengan tingkat akurasi yang tinggi, khususnya dengan model Random Forest yang mencapai akurasi 99,53%. Ini menunjukkan bahwa masalah utama dalam memprediksi kualitas susu berdasarkan data parameter telah terjawab dengan baik.
 
 Selain itu, laporan ini menjawab pertanyaan kedua, yaitu "algoritma pembelajaran mesin apa yang paling efektif dalam memprediksi kualitas susu?" dengan membandingkan dua algoritma—Random Forest dan SVM. Hasil evaluasi menunjukkan bahwa Random Forest lebih baik daripada SVM dalam hal ini.
  
