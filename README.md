@@ -71,7 +71,7 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
    
 ![image](https://github.com/user-attachments/assets/80843e48-0219-4fcb-a26f-850c759871a7)
 
-6. Lalu kita mengubah kolom `Grade` menjadi nilai numerik menggunakan mapping (Encoding Fitur Target). Sekarang diasumsikan Low (0), Meidum (1), dan High (2).
+6. Lalu kita mengubah kolom `Grade` menjadi nilai numerik menggunakan mapping (encoding fitur target). Sekarang diasumsikan Low (0), Meidum (1), dan High (2).
     
 ![image](https://github.com/user-attachments/assets/c45aa0f7-d802-482b-9625-1380663ce55a)
 
