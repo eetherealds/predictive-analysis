@@ -139,7 +139,7 @@ Colour by Grade
 
 ## Data Preparation
 1. Melakukan mapping label kategori ke angka, mengubah nilai kolom `Grade` dari teks ke angka.
-2. Menampilkan jumlah data Grade seetelah konversi.
+2. Menampilkan jumlah data `Grade` seetelah konversi.
 ![image](https://github.com/user-attachments/assets/072e4871-2d7e-45b2-a519-511e72bac175)
 
 3. Memisahkan fitur (x) dan label (y)
@@ -155,7 +155,7 @@ Colour by Grade
 ![image](https://github.com/user-attachments/assets/bad2ce77-c045-40db-9196-d561a803f4a0)
 
 ## Modeling
-Pada tahap ini saya menggunakan dua algoritma machine learning yaitu Random Forest (RF) dan Support Vector Machine (SVM) untuk menyelesasikan permasalahan klasifikasi dalam Milk Quality Dataset yang diimplementasikan menggunakan pipeline untuk memastikan proses preprocessing dan pelatihan model dilakukan secara terintegrasi. 
+Pada tahap ini penulis menggunakan dua algoritma machine learning yaitu Random Forest (RF) dan Support Vector Machine (SVM) untuk menyelesasikan permasalahan klasifikasi dalam Milk Quality Dataset yang diimplementasikan menggunakan pipeline untuk memastikan proses preprocessing dan pelatihan model dilakukan secara terintegrasi. 
 
 RF adalah algoritma ensemble yang menggunakan banyak pohon keputusan untuk menghasilkan prediksi yang stabil dan akurat. RF memiliki kelebihan seperti ketahanan terhadap overfitting dan kemampuan menangani data dengan missing values, tetapi membutuhkan lebih banyak sumber daya komputasi.
 
@@ -174,7 +174,7 @@ Sedangkan, pipeline SVM menggunakan `SVC` dari `sklearn.svm`. Pipeline ini juga 
 Setelah semua model dijalankan, penulis memilih algoritma Random Forest sebagai model terbaik yang akan digunakan sebagai solusi untuk memprediksi kualitas susu. Karena, model ini memiliki akurasi dan skor F1 tertinggi dibandingkan SVM, serta kesalahan klasifikasi pada matriks confusion yang lebih kecil dibanding model lainnya. Penjelasan lebih lengkap mengenai alasan ini ada pada bagian **evaluation**.
 
 ## Evaluation
-Pada tahap evaluasi ini penulis menggunakan beberapa metrik untuk mengukur performa model. yaitu `accuracy`, `precission`, `recall` dan `F1-score`. Disini saya memakai confusion matrix untuk memberikan visualisasi mengenai hasil klasifikasi model secara lebih rinci.
+Pada tahap evaluasi ini penulis menggunakan beberapa metrik untuk mengukur performa model. yaitu `accuracy`, `precission`, `recall` dan `F1-score`. Disini penulis memakai confusion matrix untuk memberikan visualisasi mengenai hasil klasifikasi model secara lebih rinci.
 
 ### **Metrik Evaluasi yang Digunakan**
 1. **Accuracy:** Mengukur presentase prediksi yang benar dibandingkan dengan total data.
