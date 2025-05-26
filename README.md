@@ -80,7 +80,7 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
 - Medium berjumlah 374 sampel.
 - High berjumlah 256 sampel, menjadi kelas dengan jumlah data paling sedikit.
 
-**Exploratory Data Analysis (EDA)**
+### **Exploratory Data Analysis (EDA)**
 1. **Membuat grafik distribusi pH dan Temperature.**
 
 ![image](https://github.com/user-attachments/assets/2a92e1d6-a8db-4da4-8db2-1797620ac2f3)
