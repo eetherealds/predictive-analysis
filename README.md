@@ -230,9 +230,11 @@ Pada tahap evaluasi ini penulis menggunakan beberapa metrik untuk mengukur perfo
 
 ## Kesimpulan
 **1. Bagaimana cara memprediksi kualitas susu berdasarkan parameter fisik dan kimia yang ada dalam dataset?**
+
 Berdasarkan hasil analisis dan pemodelan, kualitas susu dapat diprediksi secara efektif dengan menggunakan data parameter fisik (seperti pH, temperature, taste, odor, fat, turbidity, dan colour) melalui pendekatan machine learning. Dengan proses data preparation dan preprocessing yang tepat, serta pemilihan fitur yang relevan, sistem dapat mengklasifikasikan kualitas susu menjadi tiga kategori (low, medium, high) secara otomatis.
 
 **2. Algoritma machine learning apa yang paling efektif dalam memprediksi kualitas susu?**
+
 Dari dua algoritma yang diuji, yaitu Random Forest dan Support Vector Machine (SVM), hasil evaluasi menunjukkan bahwa Random Forest memberikan performa terbaik dengan akurasi dan F1-score paling tinggi (99,53%), dan tingkat kesalahan klasifikasi yang sangat kecil, khususnya pada confusion matrix. Hal ini selaras dengan tujuan bisnis untuk mengetahui algoritma paling efektif dalam prediksi kualitas susu, sehingga Random Forest direkomendasikan sebagai model utama untuk implementasi sistem prediksi kualitas susu.
  
 ## Referensi
