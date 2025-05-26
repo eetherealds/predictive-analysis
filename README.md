@@ -71,18 +71,14 @@ Sumber dataset: https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data
    
 ![image](https://github.com/user-attachments/assets/80843e48-0219-4fcb-a26f-850c759871a7)
 
-6. Lalu kita mengubah kolom `Grade` menjadi nilai numerik menggunakan mapping (encoding fitur target). Sekarang diasumsikan Low (0), Meidum (1), dan High (2).
-    
-![image](https://github.com/user-attachments/assets/c45aa0f7-d802-482b-9625-1380663ce55a)
-
-7. Membuat plot distribusi kelas susu.
+6. Membuat plot distribusi kelas susu.
     
 ![image](https://github.com/user-attachments/assets/06eff0d0-d525-43ca-aaf1-2668131f271b)
 
 **Keterangan:**
-- Low (0) berjumlah 429 sampel, menjadi kelas dengan jumlah data terbanyak.
-- Medium (1) berjumlah 374 sampel.
-- High (2) berjumlah 256 sampel, menjadi kelas dengan jumlah data paling sedikit.
+- Low berjumlah 429 sampel, menjadi kelas dengan jumlah data terbanyak.
+- Medium berjumlah 374 sampel.
+- High berjumlah 256 sampel, menjadi kelas dengan jumlah data paling sedikit.
 
 **Exploratory Data Analysis (EDA)**
 1. **Membuat grafik distribusi pH dan Temperature.**
@@ -101,62 +97,60 @@ Gambar Kanan (Distribusi Temperature)
   
 2. **Membuat grafik distribusi pH dan Temperature terhadap kategori Grade.**
 
-![image](https://github.com/user-attachments/assets/92472f18-3ba5-4b64-b2dc-7ced2d30a25d)
+![image](https://github.com/user-attachments/assets/69442871-c40b-459b-b843-de550301c17d)
+
 
 **Keterangan**
 
 Gambar Kiri (pH by Grade):
-- Grade Low (0) memiliki variasi pH yang besar (3-9) dengan median sekitar 6.5.
-- Grade Medium (1) dan High (2) memiliki pH yang lebih stabil di kisaran 6-7.
+- Grade Low memiliki variasi pH yang besar (3-9) dengan median sekitar 6.5.
+- Grade Medium dan High memiliki pH yang lebih stabil di kisaran 6-7.
 
 Gambar Kanan (Temperature by Grade):
-- Grade Low (0) menunjukkan variasi temperatur yang besar (35-70°C) dengan outlier di 90°C.
-- Grade Medium (1) dan High (2) memiliki rentang temperatur lebih konsisten (35-45°C).
+- Grade Low menunjukkan variasi temperatur yang besar (35-70°C) dengan outlier di 90°C.
+- Grade Medium dan High memiliki rentang temperatur lebih konsisten (35-45°C).
 
 3. **Menampilkan grafik semua parameter terhadap grade.**
 
-![image](https://github.com/user-attachments/assets/ee40fcc0-7b74-445b-b3c2-bc08ab1df2bb)
+![image](https://github.com/user-attachments/assets/554d6e47-db0f-4ab7-8c62-9e73681919fc)
+
 
 **Keterangan**
 
 Taste by Grade
-- Taste 1 (enak) banyak ditemukan pada Grade 0 (Low) dan Grade 2 (High).
-- Taste 0 (tidak enak) lebih banyak pada Grade 1 (Medium).
+- Taste 1 (enak) banyak ditemukan pada Grade (Low) dan Grade (High).
+- Taste 0 (tidak enak) lebih banyak pada Grade (Medium).
 
 Odor by Grade 
-- Odor 0 (bau tidak sedap) mendominasi Grade 1 (Medium) dan Grade 0 (Low).
-- Odor 1 (normal) mendominasi Grade 2 (High).
+- Odor 0 (bau tidak sedap) mendominasi Grade (Medium) dan Grade (Low).
+- Odor 1 (normal) mendominasi Grade (High).
 
 Fat by Grade
-- Fat 0 (rendah) dominan di Grade 1 (Medium).
-- Fat 1 (tinggi) lebih banyak muncul pada Grade 0 (Low) dan Grade 2 (High).
+- Fat 0 (rendah) dominan di Grade (Medium).
+- Fat 1 (tinggi) lebih banyak muncul pada Grade (Low) dan Grade (High).
 
 Turbidity by Grade
-- Turbidity 0 (rendah) banyak pada Grade 1 (Medium).
-- Turbidity 1 (tinggi) banyak pada Grade 0 (Low) dan Grade 2 (High).
+- Turbidity 0 (rendah) banyak pada Grade (Medium).
+- Turbidity 1 (tinggi) banyak pada Grade (Low) dan Grade (High).
 
 Colour by Grade
-- Colour 255 mendominasi semua grade, tapi Grade 0 (Low) paling banyak.
-- Nilai warna di bawah 255 cenderung meningkat untuk Grade 2 (High).
-
-4. **Korelasi numerik menggunakan heatmap.**
-
-![image](https://github.com/user-attachments/assets/b8f62c3b-7ab3-412c-9f72-62166ffbb0a1)
-
-**Keterangan:**
-- Grade memiliki korelasi negatif yang lemah terhadap temperature, korelasi antar fitur lainnya juga terlihat lemah. Terlihat nilai mendekati 0 yang menunjukkan bahwa variabel-variabel tersebut relatif independen satu sama lain.
--  Odor dan Turbidity memiliki korelasi positif moderat (0.46), yang dapat menunjukkan hubungan antara bau dan tingkat kekeruhan susu.
+- Colour 255 mendominasi semua grade, tapi Grade (Low) paling banyak.
+- Nilai warna di bawah 255 cenderung meningkat untuk Grade (High).
 
 ## Data Preparation
-1. Memisahkan fitur (x) dan label (y)
+1. Melakukan mapping label kategori ke angka, mengubah nilai kolom `Grade` dari teks ke angka.
+2. Menampilkan jumlah data Grade seetelah konversi.
+![image](https://github.com/user-attachments/assets/072e4871-2d7e-45b2-a519-511e72bac175)
+
+3. Memisahkan fitur (x) dan label (y)
    - fitur (x) mencakup semua kolom kecuali `Grade`, sedangkan label (y) adalah kolom `Grade`.
    - Tujuan: Memisahkan variabel independen dan dependen untuk pemodelan
-2. Menentukan kolom kategorikal dan numerik dari data fitur (x), lalu menampilkan hasil identifikasi kolom.
-3. Membuat pipeline untuk transformasi data numerik dan kategorikal.
+4. Menentukan kolom kategorikal dan numerik dari data fitur (x), lalu menampilkan hasil identifikasi kolom.
+5. Membuat pipeline untuk transformasi data numerik dan kategorikal.
    - Pipeline numerik menggunakan `StandardScaler` untuk menstandarkan data numerik sehingga memiliki mean 0 dan standar deviasi 1.
    - Pipeline kategorikal menggunakan `OneHotEncoder` untuk mengubah data kategorikal menjadi representasi numerik.
-4. Menggabungkan pipeline numerik dan kategorikal ke dalam satu perpocessor untuk memastikan transformasi dilakukan secara paralel pada kolom yang sesuai.
-5. Membagi dataset ke dalam data latih (80%) dan data uji (20%) untuk memastikan model dilatih dan diuji pada data yang berbeda untuk menghindari overfitting.
+6. Menggabungkan pipeline numerik dan kategorikal ke dalam satu perpocessor untuk memastikan transformasi dilakukan secara paralel pada kolom yang sesuai.
+7. Membagi dataset ke dalam data latih (80%) dan data uji (20%) untuk memastikan model dilatih dan diuji pada data yang berbeda untuk menghindari overfitting.
 
 ![image](https://github.com/user-attachments/assets/bad2ce77-c045-40db-9196-d561a803f4a0)
 
