@@ -231,7 +231,8 @@ Pada tahap evaluasi ini penulis menggunakan beberapa metrik untuk mengukur perfo
 ## Kesimpulan
 Model yang dikembangkan dalam proyek ini berhasil memprediksi kualitas susu berdasarkan parameter fisik dan kimia. Sistem dapat mengklasifikasikan susu ke dalam tiga kategori kualitas (low, medium, dan high) dengan tingkat akurasi yang tinggi, khususnya dengan model Random Forest yang mencapai akurasi 99,53%. Ini menunjukkan bahwa masalah utama dalam memprediksi kualitas susu berdasarkan data parameter telah terjawab dengan baik.
 
-Selain itu, laporan ini menjawab pertanyaan kedua, yaitu "algoritma pembelajaran mesin apa yang paling efektif dalam memprediksi kualitas susu?" dengan membandingkan dua algoritma—Random Forest dan SVM. Hasil evaluasi menunjukkan bahwa Random Forest lebih baik daripada SVM dalam hal ini.
+Selain itu, laporan ini menjawab pertanyaan kedua, yaitu "Algoritma machine learning apa yang paling efektif dalam memprediksi kualitas susu?
+" dengan membandingkan dua algoritma—Random Forest dan SVM. Hasil evaluasi menunjukkan bahwa Random Forest lebih baik daripada SVM dalam hal ini.
  
 ## Referensi
 F. Fauzi and A. R. Abdullah, "Milk Quality Prediction Using Machine Learning," ResearchGate, Nov. 2023. [Online]. Available: https://www.researchgate.net/publication/376064637_Milk_Quality_Prediction_Using_Machine_Learning 
